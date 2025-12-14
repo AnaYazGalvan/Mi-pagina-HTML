@@ -120,3 +120,29 @@ body {
     width: 300px;
   }
 
+/* BOTÓN VOLVER ARRIBA */
+  #btn-arriba {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    background-color: #776363;
+    color: white;
+    border: none;
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    font-size: 24px;
+    font-weight: bold;
+    cursor: pointer;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+    display: none;
+    z-index: 1000;
+    transition: all 0.3s ease;
+ }
+
+  #btn-arriba:hover {
+    background-color: #844f4f;
+    transform: scale(1.1);
+ }
+
+
