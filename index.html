@@ -1,41 +1,71 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mi Portfolio</title>
-    <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mi Portafolio</title>
+  <link rel="stylesheet" type="text/css" href="styles.css">
 </head>
 <body>
-    <header>
-        <h1>Mi Portfolio</h1>
-    </header>
 
-    <main>
-        <section>
-            <h2>Sobre Mí</h2>
-            <p> Esta es mi página de portfolio.</p>
-        </section>
+  <nav>
+    <ul>
+        <li><a href="index.html">Inicio</a></li>  
+        <li><a href="index.html#acerca">Sobre mí</a></li>
+        <li><a href="index.html#conocimientos">Conocimientos</a></li>
+        <li><a href="index.html#proyectos">Proyectos</a></li>
+        <li><a href="contacto.html">Contacto</a></li>
+      </ul>
+  </nav>
 
-        <section>
-            <h2>Mis Proyectos</h2>
-            <table>
-                <tr><th>Proyecto</th><th>Tecnología</th><th>Estado</th></tr>
-                <tr><td>Página Markdown</td><td>Markdown</td><td>✅ Hecho</td></tr>
-                <tr><td>Este Portfolio</td><td>HTML/CSS</td><td>✅ Hecho</td></tr>
-            </table>
-        </section>
+  <header>
+    <h1>Ana Yazmina Galván </h1>
+    <h2>yazgal@yazgal.es</h2>
+  </header>
 
-        <section>
-            <h2>Contacto</h2>
-            <p>Email: miCorreo@example.com</p>
-            <p><a href="https://tuusuario.github.io/mi-pagina-markdown/">→ Ver página Markdown</a></p>
-        </section>
-    </main>
+  <section id="acerca">
+    <h2>Sobre mí</h2>
+    <img class="img-perfil" src="img/perfil-avatar-mujer-icono-redondo_24640-14047.avif" alt="Mi foto de perfil">
+    <p>
+        ¡Hola! Soy Yazmina. Soy técnico en montaje y mantenimiento de equipos con experiencia en sistemas Linux. 
+        Me apasiona la tecnología y estoy siempre buscando oportunidades emocionantes para crecer profesionalmente.
+    </p>
+    <a href="cv.pdf" target="_blank" class="link-boton">Descargar CV</a>
+  </section>
 
-    <footer>
+  <section id="conocimientos">
+    <h2>Conocimientos y Habilidades</h2>
+    <ul>
+      <li>Desarrollo web con HTML y CSS </li>
+      <li>Administración de sistemas operativos (Linux)</li>
+      <li>Diseño y mantenimiento de redes</li>
+      
+    </ul>
+  </section>
+  
+
+  <section id="proyectos">
+    <h2>Proyectos</h2>
+    <table>
+        <tr>
+            <td>Sitio web personal</td>
+            <td>Desarrollo de un sitio web personal utilizando HTML y CSS para mostrar información sobre educación, habilidades y proyectos.</td>
+            <td>HTML, CSS</td>
+          </tr>
+        <tr>
+            <td>Blog técnico</td>
+            <td>Creación de un blog para compartir experiencias en desarrollo web, administración de sistemas operativos y diseño de redes.</td>
+            <td>HTML, CSS, Blogging Platform</td>
+          </tr>
+     
+    </table>
+  </section>
+    
+ <footer>
         <p>&copy; 2025 Mi Portfolio. Todos los derechos reservados.</p>
         <p>Creado con ❤️ usando HTML y CSS</p>
-    </footer>
+ </footer>
+    
 </body>
 </html>
+
