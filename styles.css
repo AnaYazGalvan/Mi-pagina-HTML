@@ -1,94 +1,122 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
 
 body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: 'Arial', sans-serif;
     line-height: 1.6;
-    color: #333;
-    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-    min-height: 100vh;
-}
+    margin: 0;
+    padding: 0;
+  }
 
-header {
-    background: rgba(0, 0, 0, 0.8);
-    color: white;
+  nav {
+    /* Truco que encontré para hacer menu flotate en la parte de arriba */
+    overflow: hidden;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 50px;
+  }
+
+  nav ul {
+    list-style: circle;
+    background-color: #776363;
     text-align: center;
-    padding: 3rem 2rem;
-    border-bottom: 4px solid #667eea;
-}
+    padding: 10px 0;
+    margin-top: 0;
+  }
+  
+  nav ul li {
+    display: inline;
+    margin-right: 20px;
+  }
+  
+  nav a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+  }
+  
+ 
+  header {
+    margin-top: 50px;
+    background-color: #eee;
+    text-align: center;
+    padding: 20px 0;
+  }
+  
+ 
+  #acerca {
+    padding: 50px;
+    text-align: center;
+  }
 
-header h1 {
-    font-size: 2.8rem;
-    margin-bottom: 0.5rem;
-}
+  #acerca p {
+    text-align: justify;
+  }
+  
+  .img-perfil {
+    background-color: #dad9ea;
+    border: 10px solid   #776363; 
+    border-radius: 50%;
+    max-width: 300px;
+  }
+  
+  .link-boton {
+    display: inline-block;
+    background-color: #844f4f;
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 20px;
+  }
+  
 
-main {
-    max-width: 1200px;
-    margin: 2rem auto;
-    padding: 0 1rem;
-}
-
-section {
-    background: white;
-    border-radius: 10px;
-    padding: 2rem;
-    margin-bottom: 2rem;
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
-}
-
-h2 {
-    color: #667eea;
-    margin-bottom: 1.5rem;
-    font-size: 2rem;
-    border-bottom: 3px solid #667eea;
-    padding-bottom: 0.5rem;
-}
-
-table {
+  #conocimientos {
+    background-color: #dad9ea;
+    padding: 50px;
+    text-align: center;
+  }
+  
+  #conocimientos ul {
+    list-style: none;
+  }
+  
+  #conocimientos li {
+    display: inline-block;
+    margin: 0 10px;
+  }
+  
+ 
+  #proyectos {
+    padding: 50px;
+  }
+  
+  #proyectos table {
     width: 100%;
     border-collapse: collapse;
-    margin: 1.5rem 0;
-}
-
-th {
-    background: #667eea;
-    color: white;
-    padding: 1rem;
+    margin-top: 20px;
+  }
+  
+  #proyectos table th, #proyectos table td {
+    border: 1px solid #718fcb;
+    padding: 10px;
     text-align: left;
-    font-weight: bold;
-}
-
-td {
-    padding: 1rem;
-    border-bottom: 1px solid #ddd;
-}
-
-tr:hover {
-    background: #f0f0f0;
-}
-
-
-a {
-    color: #667eea;
-    font-weight: bold;
+  }
+  
+  #proyectos table a {
     text-decoration: none;
-}
-
-a:hover {
-    text-decoration: underline;
-}
-
-footer {
-    background: rgba(0, 0, 0, 0.9);
-    color: white;
+    color: #333;
+  }
+  
+  
+  footer {
+    background-color: #776363;
+    color: #fff;
     text-align: center;
-    padding: 2rem;
-    margin-top: 2rem;
-}
+    padding: 20px 0;
+  }
+  
+  #contacto table {
+    margin: 0 auto;
+    width: 300px;
+  }
 
-footer p {
-    margin: 0.5rem 0;
-}
